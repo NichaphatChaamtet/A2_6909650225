@@ -38,3 +38,14 @@ header h2{
     font-size: 30px;
     color: #60284e;
 }
+
+#Portfolio{
+    max-width: 500px;
+    height: auto;
+    display: block;    /* เปลี่ยนรูปภาพให้เป็นบล็อกเพื่อเปิดใช้คุณสมบัติ margin */
+    margin: 20px auto 0 auto;  /* ด้านบนห่าง 20px, ซ้าย-ขวาเป็น auto เพื่อดึงเข้ากึ่งกลาง */
+}
+
+#sectionPortfolio{
+    background-color: #dda68d;
+}
