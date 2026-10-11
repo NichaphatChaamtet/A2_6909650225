@@ -4,126 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Portfolio</title>
+    <link rel="stylesheet" href="https://cloudflare.com" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 
 <body>
 
-    <header id="font">
-        <h2>My First Learning Portfolio</h2>
+    <header id="font" class="text-center py-4 bg-light mb-4 border-bottom">
+        <h2 class="fw-bold">My First Learning Portfolio</h2>
     </header>
 
-    <main>
-        <section id="about_me">
-            <h2 >About Me</h2>
-                <ul>
-                    <li><strong>ชื่อ :</strong> นางสาวณิชาภัทร ชะเอมเทศ</li>
-                    <li><strong>รหัสประจำตัวนักศึกษา :</strong> 6909650225</li>
-                    <li><strong>Instagram :</strong> <a href="https://www.instagram.com/nichaphat._.06/">nichaphat._.06</a></li>
-                    <li><strong>คณะ :</strong> คณะวิทยาศาสตร์และเทคโนโลยี</li>
-                    <li><strong>สาขาวิชา :</strong> วิทยาการคอมพิวเตอร์ เอกคอมพิวเตอร์ประยุกต์ (ภาคพิเศษ)</li>
-                    <li><strong>สิ่งที่อยากบอกกับทุกคน :</strong> โดยส่วนตัวชอบคีย์บอร์ดน่ารักๆ เสียงครีมมี่
-                    ของแบรนด์ Big penguin รุ่น YUNZII C98 Cake Meow Keyboard Creamy Mechanical Keyboard</li>
-                </ul>
-            <section id="image">
-                <img src="media/image.png" alt="Keyboard" >
-            </section>
+    <main class="container my-5">
+        <section id="about_me" class="mb-5">
+            <h2 class="text-primary mb-3">About Me</h2>
+            <div class="card bg-white p-4 rounded border-0 shadow-sm">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-7">
+                        <ul class="list-unstyled lh-lg mb-0">
+                            <li><strong>ชื่อ :</strong> นางสาวณิชาภัทร ชะเอมเทศ</li>
+                            <li><strong>รหัสประจำตัวนักศึกษา :</strong> 6909650225</li>
+                            <li><strong>Instagram :</strong> <a href="https://instagram.com" target="_blank">nichaphat._06</a></li>
+                            <li><strong>คณะ :</strong> คณะวิทยาศาสตร์และเทคโนโลยี</li>
+                            <li><strong>สาขาวิชา :</strong> วิทยาการคอมพิวเตอร์ เอกคอมพิวเตอร์ประยุกต์ (ภาคพิเศษ)</li>
+                            <li><strong>สิ่งที่อยากบอกกับทุกคน :</strong> โดยส่วนตัวชอบคีย์บอร์ดน่ารักๆ เสียงครีมๆ ของแบรนด์ Big penguin รุ่น YUNZII C98 Cake Meow Keyboard Creamy Mechanical Keyboard</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-5 text-center">
+                        <img src="media/image.png" alt="Keyboard" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="sectionPortfolio">
-            <h2 >Portfolio</h2>
-                <ul>
-                    <li> <strong>Title :</strong> Mini Exercise </li>
-                    <li> <strong>Type :</strong> Self-learning </li>
-                    <li> <strong>Date :</strong> 28 September 2026 </li>
-                    <li> <strong>Role :</strong> Developer</li>
-                    <li> <strong>Description :</strong> ได้ฝึกใช้ Bootstrap ในการทำ Card-body </li>
-                    <li> <strong>Skills :</strong> HTML CSS และ Bootstrap</li>
-                    <li> <strong>Reflection :</strong> ตอนทำ Exercise เรื่อง Bootstrap Cards หนูได้ฝึกสร้างหน้าต่างรีวิว (Rating Component) โดยใช้ Bootstrap Framework ในการจัดเลย์เอาต์และตกแต่งเว็บค่ะ หนูได้เรียนรู้การใช้ Utility Classes ต่างๆ มากขึ้น เช่น การใส่เงาหนา (shadow-lg) การทำมุมโค้ง (rounded-4) และการเอาเส้นขอบออก (border-0) รวมถึงการจัดระบบ Grid ตอนแรกมีความท้าทายเล็กน้อยในการเลือกใช้คลาสให้ถูกต้องตามสไลด์กำหนดและการจัดตำแหน่งกล่องภายในคอลัมน์ แต่พอเปิด Live Preview เช็กผลลัพธ์และปรับแก้ไปทีละจุดก็ทำออกมาได้ถูกต้องตามแบบค่ะ ถ้าพัฒนาต่อ อยากลองปรับแต่งให้รองรับ Responsive หน้าจอมือถือให้สวยงามยิ่งขึ้น และอยากเพิ่มโค้ด JavaScript เพื่อให้ช่องค้นหารีวิวสามารถทำงานได้จริงค่ะ</li>
-                    <li> <strong>Evidence :</strong> <img id="Portfolio" src="media/MiniEx.png" alt="Mini Exercise"> </li>
-                </ul>
+        <section id="sectionPortfolio" class="mb-5">
+            <h2 class="text-primary mb-4">Portfolio</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm p-4 border-0 bg-white">
+                        <h3 class="h4 text-dark mb-3">Mini Exercise</h3>
+                        <ul class="list-unstyled lh-base">
+                            <li class="mb-2"><strong>Title :</strong> Mini Exercise</li>
+                            <li class="mb-2"><strong>Type :</strong> Self-learning</li>
+                            <li class="mb-2"><strong>Date :</strong> 28 September 2026</li>
+                            <li class="mb-2"><strong>Role :</strong> Developer</li>
+                            <li class="mb-2"><strong>Description :</strong> หนูฝึกใช้ Bootstrap ในการทำ Card-body</li>
+                            <li class="mb-2"><strong>Skills :</strong> HTML CSS และ Bootstrap</li>
+                            <li class="mb-3"><strong>Reflection :</strong> ตอนทำ Exercise เรื่อง ตอนทำ หน้าต่างรีวิว (Rating Component) โดยใช้ Bootstrap Framework ในการจัดเลย์เอาต์และตกแต่งเว็บไซต์ค่ะ หนูได้เรียนรู้ใช้ Utility classes ต่างๆ มากขึ้น เช่น การใส่เงาหนา (shadow-lg) การทำมุมโค้ง (rounded-4) และการเอาเส้นขอบออก (border-0) รวมถึงการจัดระบบ Grid ตอนแรกมีความท้าทายเล็กน้อยในการเลือกใช้คลาสให้ถูกต้องตามสไตล์ที่กำหนดและการจัดตำแหน่งภายในคอมโพเนนต์ แต่พอเปิด Live Preview เช็กผลลัพธ์และเข้าไปแก้โค้ดจุดที่ทำออกมาได้ถูกต้องตามแบบค่ะ ถ้าพัฒนาต่อ อยากลองปรับแต่งให้รองรับ Responsive หน้าจอมือถือให้สวยงามยิ่งขึ้น และอยากเพิ่มโค้ด JavaScript เพื่อให้ช่องค้นหาริวิวสามารถทำงานได้จริงค่ะ</li>
+                            <li class="mt-auto"><strong>Evidence :</strong>
+                                <img src="media/MiniEx.png" alt="Mini Exercise" class="img-fluid w-100 rounded mt-2 shadow-sm">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-                <ul>
-                    <li> <strong>Title :</strong> NK Lost&Found </li>
-                    <li> <strong>Type :</strong> Competition </li>
-                    <li> <strong>Date :</strong> 27 September 2026 </li>
-                    <li> <strong>Role :</strong> Technical Advisor </li> 
-                    <li> <strong>Description :</strong> เว็บแอปพลิเคชันระบบแจ้งและติดตามสิ่งของที่หายภายในโรงเรียนท่าเรือ "นิตยานุกูล" (NK Lost&Found) เพื่อช่วยให้นักเรียนและบุคลากรสามารถตรวจสอบ สิ่งของที่ถูกพบ และช่วยนำสิ่งของกลับคืนสู่เจ้าของได้อย่างเป็นระบบ โดยข้าพเจ้าทำหน้าที่เป็นที่ปรึกษาด้านเทคนิค (Technical Advisor) ในการให้แนวคิด วางโครงสร้างระบบฐานข้อมูลด้วย PHP และ SQL รวมถึงแนะนำการเขียนโค้ดส่วนหน้าเว็บด้วย HTML, CSS, JavaScript และการประยุกต์ใช้ AI ในการพัฒนาโปรเจกต์ </li>
-                    <li> <strong>Skills :</strong> • HTML, CSS, JavaScript, PHP, SQL, Database Management, AI-Assisted Development, Technical Mentoring</li>
-                    <li> <strong>Reflection :</strong> ในการทำกิจกรรมครั้งนี้ ข้าพเจ้าได้ทำหน้าที่เป็นที่ปรึกษาและพี่เลี้ยงด้านเทคนิค (Technical Advisor) ให้กับรุ่นน้องในการพัฒนาเว็บแอปพลิเคชัน NK Lost&Found เพื่อส่งเข้าประกวดแข่งขันงานศิลปหัตถกรรม โดยช่วยระดมสมองคิดไอเดีย วางโครงสร้างฐานข้อมูล และไกด์แนวทางการเขียนโค้ดทั้งส่วนของ Frontend และ Backend จากการทำงานนี้ทำให้ข้าพเจ้าได้พัฒนาทักษะการถ่ายทอดความรู้และการเป็นพี่เลี้ยง (Mentorship) รวมถึงได้ฝึกกระบวนการคิดวิเคราะห์เพื่อวางระบบ Tech Stack ให้ตอบโจทย์ผู้ใช้งานจริง และเรียนรู้วิธีการแนะนำให้ผู้อื่นใช้ AI Tools มาช่วยเพิ่มประสิทธิภาพในการพัฒนาโปรแกรม อย่างไรก็ตาม ความท้าทายสำคัญคือการอธิบายเนื้อหาหลังบ้านที่มีความซับซ้อน เช่น ระบบฐานข้อมูล SQL และการทำงานของ PHP ให้เข้าใจง่ายสำหรับผู้เริ่มต้น ซึ่งข้าพเจ้าได้แก้ปัญหาโดยการวาดแผนผังภาพข้อมูล (Data Flow) ควบคู่กับการใช้ AI ช่วยสอนวิธีไล่เช็กจุดผิดพลาด (Debugging) ทีละขั้นตอน สำหรับก้าวต่อไปหากมีโอกาสได้ทำหน้าที่นี้อีก ข้าพเจ้าอยากศึกษาสถาปัตยกรรมเว็บสมัยใหม่ (Modern Web Frameworks) เพิ่มเติม เพื่อนำความรู้มาประยุกต์และแนะนำต่อยอดในโปรเจกต์ถัดไป รวมถึงพัฒนาทักษะการวาง Roadmap การทำงานร่วมกันให้มีประสิทธิภาพมากยิ่งขึ้น</li>
-                    <li> <strong>Evidence :</strong> <img id="Portfolio" src="media/Projectกล้า.png" alt="Mini Exercise"> </li>
-                </ul>
-
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm p-4 border-0 bg-white">
+                        <h3 class="h4 text-dark mb-3">NK Lost&Found</h3>
+                        <ul class="list-unstyled lh-base">
+                            <li class="mb-2"><strong>Title :</strong> NK Lost&Found</li>
+                            <li class="mb-2"><strong>Type :</strong> Competition</li>
+                            <li class="mb-2"><strong>Date :</strong> 27 September 2026</li>
+                            <li class="mb-2"><strong>Role :</strong> Technical Advisor</li>
+                            <li class="mb-2"><strong>Description :</strong> เว็บแอปพลิเคชันระบบแจ้งและติดตามสิ่งของที่หายภายในโรงเรียนท่าเรือ "นิตยานุกูล" (NK Lost&Found) เพื่อให้นักเรียนและบุคลากรสามารถตรวจสอบ สิ่งของที่ถูกพบ และช่วยนำส่งของกลับคืนสู่เจ้าของได้อย่างเป็นระบบ โดยข้าพเจ้าทำหน้าที่เป็นที่ปรึกษาด้านเทคนิค (Technical Advisor) ในการให้แนวคิด วางโครงสร้างระบบฐานข้อมูลด้วย PHP และ SQL รวมถึงแนะนำการเขียนโค้ดส่วนหน้าเว็บด้วย HTML, CSS, JavaScript และการประยุกต์ใช้ AI ในการพัฒนาโปรเจกต์</li>
+                            <li class="mb-2"><strong>Skills :</strong> HTML, CSS, JavaScript, PHP, SQL, Database Management, AI-Assisted Development, Technical Mentoring</li>
+                            <li class="mb-3"><strong>Reflection :</strong> ในการทำกิจกรรมครั้งนี้ ข้าพเจ้าได้ทำหน้าที่เป็นที่ปรึกษาและพี่เลี้ยงด้านเทคนิค (Technical Advisor) ให้กับรุ่นน้องในการพัฒนาเว็บแอปพลิเคชัน NK Lost&Found เพื่อส่งเข้าประกวดแข่งขันงานศิลปหัตถกรรม โดยช่วยระดมไอเดีย วางโครงสร้างข้อมูล และไกด์แนวทางการเขียนโค้ดทั้งส่วนของ Frontend และ Backend จากการทำงานนี้ทำให้ข้าพเจ้าได้พัฒนาทักษะการถ่ายทอดความรู้และการเป็นพี่เลี้ยง (Mentorship) รวมถึงได้ฝึกกระบวนการคิดวิเคราะห์เพื่อวางระบบ Tech Stack ให้ตอบโจทย์ผู้ใช้งานจริง และเรียนรู้วิธีการแนะนำให้ผู้อื่นใช้ AI Tools มาช่วยเพิ่มประสิทธิภาพในการพัฒนาโปรแกรม อย่างไรก็ตาม ความท้าทายสำคัญคือการอธิบายเนื้อหาหลังบ้านที่มีความซับซ้อน เช่น ระบบฐานข้อมูล SQL และการทำงานของ PHP ให้เข้าใจง่ายสำหรับผู้เริ่มต้น ซึ่งข้าพเจ้าได้แก้ปัญหาโดยการวาดแผนผังภาพข้อมูล (Data Flow) ควบคู่กับการใช้ AI ช่วยสอนวิธีไล่เช็กจุดผิดพลาด (Debugging) ทีละขั้นตอน สำหรับก้าวต่อไปหากมีโอกาสได้ทำหน้าที่นี้อีก ข้าพเจ้าอยากศึกษาภาพสถาปัตยกรรมเว็บสมัยใหม่ (Modern Web Frameworks) เพิ่มเติม เพื่อนำความรู้มาประยุกต์และแนะนำต่อยอดในโปรเจกต์ถัดไป รวมถึงพัฒนาทักษะการวาง Roadmap การทำงานร่วมกันให้มีประสิทธิภาพมากยิ่งขึ้น</li>
+                
+                            <li class="mt-auto"><strong>Evidence :</strong> 
+                                <img src="media/Projectกล้า.png" alt="NK Lost&Found" class="img-fluid w-100 rounded mt-2 shadow-sm">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="WIB">
-            <h2 >What I Built</h2>
-                <article>
-                    นี้เป็นเว็บไซต์ Learning Portfolio แบบหน้าเดียว (Single-page Website)ของฉัน ที่พัฒนาขึ้นด้วย HTML และ CSS
-                    เพื่อใช้เป็นพื้นที่แนะนำตัวและสรุปการเรียนรู้เบื้องต้น โดยเว็บไซต์นี้ประกอบด้วยส่วนต่างๆ เช่น ส่วนแนะนำตัว (About Me) 
-                    ที่มีข้อมูลส่วนตัวและรูปภาพสิ่งของที่ฉันชอบ และส่วน What I Built ที่แสดงถึงสิ่งที่ฉันได้สร้างขึ้นในระหว่างการเรียนรู้
+        <section id="WIB" class="mb-5">
+            <h2 class="text-primary mb-3">What I Built</h2>
+            <div class="card bg-white p-4 rounded border-0 shadow-sm">
+                <article class="mb-3 border-start border-primary border-3 ps-3 py-1">
+                    นี่เป็นเว็บไซต์ Learning Portfolio แบบหน้าเดียว (Single-page Website) ของฉัน ที่พัฒนาขึ้นด้วย HTML และ CSS เพื่อใช้เป็นพื้นที่แนะนำตัวและสรุปการเรียนรู้เบื้องต้น โดยเว็บไซต์นี้ประกอบด้วยส่วนต่างๆ เช่น ส่วนแนะนำตัว (About Me) ที่มีข้อมูลส่วนตัวและรูปภาพสิ่งที่ฉันชอบ และส่วน What I Built ที่แสดงถึงสิ่งที่ฉันได้สร้างขึ้นในระหว่างการเรียนรู้
                 </article>
-                <article class="t">
-                    ในขณะที่เปิดเว็บไซต์นี้ที่เปิดจากเครื่องคอมพิวเตอร์ของฉันเอง (โดยผ่านการ Double click ไฟล์ index.html) 
-                    มีเพียงการทำงานของทางฝั่ง Client แต่ไม่ได้มี server เกิดขึ้น
+                <article class="text-muted small mb-4">
+                    Inขณะที่เปิดเว็บไซต์นี้เปิดจากเครื่องคอมพิวเตอร์ของฉันเอง (โดยผ่านการ Double click ไฟล์ index.html) มีเพียงการทำงานของ Client แต่ไม่มี Server เกิดขึ้น
                 </article>
-                <h3>Explain</h3>
-                <ul>
-                    <li> <strong>Client :</strong> เว็บบราวเซอร์ทำหน้าที่เป็นเหมือน Client ที่คอยอ่านโค้ด HTML และ CSS แล้วทำการRender 
-                        ออกมาเป็นหน้าเว็บไซต์ให้เรามองเห็น
-                    </li>
-                    <li class ="t" > <strong>Server :</strong> การเปิดไฟล์ด้วยวิธีนี้ บราวเซอร์จะเข้าไปดึงข้อมูลจากฮาร์ดดิสก์ในเครื่องคอมพิวเตอร์ของเราโดยตรง 
-                        โดยไม่ได้มีการเชื่อมต่อหรือส่งคำร้องขอ (HTTP Request) ผ่าน Internet ไปยัง Web Server เพื่อขอข้อมูล 
-                        หน้าเว็บนี้จึงทำงานแบบ offline บนเครื่องส่วนตัว 100%
-                    </li>
+    
+                <h3 class="h5 text-secondary mb-3">Explain</h3>
+                <ul class="lh-lg mb-0">
+                    <li><strong>Client :</strong> เว็บบราวเซอร์ทำหน้าที่เป็นเหมือน Client ที่คอยอ่านโค้ด HTML และ CSS แล้วทำการ Render ออกมาเป็นหน้าเว็บไซต์ให้เรามองเห็น</li>
+                    <li><strong>Server :</strong> การเปิดไฟล์ด้วยวิธีนี้ บราวเซอร์จะเข้าไปดึงข้อมูลจากฮาร์ดดิสก์ในเครื่องคอมพิวเตอร์ของเราโดยตรง โดยไม่มีการเชื่อมต่อหรือส่งคำขอร้องขอ (HTTP Request) ผ่าน Internet ไปยัง Web Server เพื่อขอข้อมูล หน้าเว็บนี้จึงทำงานแบบ offline บนเครื่องส่วนตัว 100%</li>
                 </ul>
+            </div>
         </section>
 
-        <section id="HIBI">
-            <h2>How I Built It</h2>
-                <article>
-                    การพัฒนาเว็บไซต์ My First Learning Portfolio ชิ้นนี้เน้นการเขียนและจัดระเบียบโค้ดด้วยตนเองตั้งแต่เริ่มต้นโดยใช้เพียง HTML และ CSS 
-                    ตามข้อกำหนดของรายวิชา โดยมีขั้นตอนและกระบวนการทำงานสำคัญดังนี้ : 
+        <section id="HIBI" class="mb-5">
+            <h2 class="text-primary mb-3">How I Built It</h2>
+            <div class="card bg-white p-4 rounded border-0 shadow-sm">
+                <article class="mb-3 border-start border-primary border-3 ps-3 py-1">
+                    การพัฒนาเว็บไซต์ My First Learning Portfolio ขึ้นนี้นั้นเป็นการเขียนและจัดระเบียบโค้ดด้วยตนเองตั้งแตเริ่มต้นโดยใช้เพียง HTML และ CSS ตามข้อกำหนด of รายวิชา โดยมีขั้นตอนและกระบวนการทำงานสำคัญดังนี้ :
                 </article>
-                <ul>
-                    <li class="t">
-                        <strong>การจัดระเบียบโครงสร้างไฟล์ :</strong> สร้างโฟลเดอร์หลักสำหรับโปรเจกต์ และภายในโฟลเดอร์นัน้สร้างโฟลเดอร์ย่อยสำหรับเก็บไฟล์ต่างๆขึ้นมา 
-                    เช่น โฟลเดอร์สำหรับไฟล์ CSS (css) และโฟลเดอร์สำหรับไฟล์สื่อ (media) เพื่อให้การจัดการไฟล์เป็นระเบียบและง่ายต่อการจัดระเบียบ
-                    </li>
-                    <li class="t"> <strong>การวางโครงสร้างหน้าเว็บ HTML :</strong> สร้างไฟล์ HTML หลัก (index.html) 
-                        จัดวางโครงสร้างของหน้าเว็บด้วยแท็ก HTML เช่น header, main , section, article ,ul , li
-                        เพื่อให้เนื้อหามีความเป็นระเบียบและสามารถปรับแต่งได้ง่าย
-                    </li>
-                    <li class="t"> <strong>การจัดรูปแบบและตกแต่ง (CSS) :</strong> ทำการเชื่อมโยงไฟล์ CSS เข้ากับ HTML 
-                        และปรับแต่งหน้าตาเว็บไซต์ เช่น การจัดกึ่งกลาง การกำหนดระยะขอบ (Margin) และการแก้ปัญหาเฉพาะจุด 
-                        เช่น การแยกคำสั่งปรับขนาดรูปภาพ <img> ออกจากกรอบ <section> เพื่อให้ภาพแสดงผลได้พอดีไม่ล้นกรอบ
-                    </li>
-                    <li class="t"> <strong>การตรวจสอบและแก้ไข (Debugging) :</strong> ทดสอบการแสดงผลบนเบราว์เซอร์ 
-                        และตรวจสอบความถูกต้องของการเชื่อมโยงไฟล์ (Relative path) โดยปรับแก้การใช้เครื่องหมายใน path ให้เป็น Forward slash (/) เสมอ 
-                        เพื่อป้องกันปัญหาลิงก์เสีย (Broken link) เมื่อนำไฟล์ไปเปิดบนระบบปฏิบัติการอื่น
-                    </li>
-                    <li class="t"> <strong>เครื่องมือและแหล่งข้อมูลที่ใช้ :</strong> ใช้โปรแกรมเขียนโค้ด (VS Code) สำหรับการเขียนและแก้ไขโค้ด HTML และ CSS,
-                        ใช้ Google Gemini สำหรับปรึกษาและค้นหาข้อมูลเกี่ยวกับการเขียนโค้ด และใช้ เว็บไซต์ W3Schools เป็นแหล่งอ้างอิงสำหรับหาฟอนต์ตัวหนังสือ
-                    </li>
+                <ul class="lh-lg mb-0">
+                    <li><strong>การจัดระเบียบโครงสร้างไฟล์ :</strong> สร้างโฟลเดอร์หลักสำหรับโปรเจกต์ และภายในโฟลเดอร์นี้สร้างโฟลเดอร์ย่อยสำหรับเก็บไฟล์ต่างๆขึ้นมา เช่น โฟลเดอร์สำหรับไฟล์ CSS (css) และโฟลเดอร์สำหรับไฟล์สื่อ (media) เพื่อให้การจัดการไฟล์เป็นระเบียบและง่ายต่อการจัดการระเบียบ</li>
+                    <li><strong>การวางโครงสร้างของหน้าเว็บด้วยแท็ก HTML :</strong> สร้างไฟล์ HTML หลัก (index.html) จัดวางโครงสร้างของหน้าเว็บด้วยแท็ก HTML เช่น header, main, section, article, ul, li เพื่อให้เนื้อหามีความเป็นระเบียบและสามารถปรับแต่งได้ง่าย</li>
+                    <li><strong>การจัดรูปแบบและตกแต่ง (CSS) :</strong> ทำการเชื่อมโยงไฟล์ CSS เข้ากับ HTML และปรับแต่งหน้าเว็บไซต์ เช่น การจัดกึ่งกลาง การกำหนดระยะขอบ (Margin) และการแก้ไขปัญหาเฉพาะจุด เช่น การแยกคำสั่งปรับรูปภาพ &lt;img&gt; ออกจากกรอบ &lt;section&gt; เพื่อให้ภาพแสดงผลได้พอดีไม่ล้นกรอบ</li>
+                    <li><strong>การตรวจสอบและแก้ไข (Debugging) :</strong> ทดสอบการแสดงผลบนบราวเซอร์ และตรวจสอบความถูกต้องของการเชื่อมโยงไฟล์ (Relative path) โดยปรับเน้นการใช้เครื่องหมายใน path ให้เป็น Forward slash (/) เสมอ เพื่อป้องกันปัญหาลิงก์เสีย (Broken Link) เมื่อนำไฟล์ไปเปิดในระบบปฏิบัติการอื่น</li>
+                    <li><strong>เครื่องมือและแหล่งข้อมูลที่ใช้ :</strong> ใช้โปรแกรมเขียนโค้ด (VS Code) สำหรับการเขียนและแก้ไขโค้ด HTML และ CSS, ใช้ Google Gemini สำหรับปรึกษาและค้นหาข้อมูลเกี่ยวกับการเขียนโค้ด และใช้ เว็บไซต์ W3Schools เป็นแหล่งอ้างอิงสำหรับฟอนต์ตัวหนังสือ</li>
                 </ul>
+            </div>
         </section>
 
-        <section id="reflection">
-            <h2>Reflection</h2>
-                <ul>
-                    <li class="t">
-                       <strong>ประสบการณ์และความท้าทายที่พบในการพัฒนาเว็บไซต์: </strong> การไม่รู้ว่าแท็กตัวไหนใช้ยังไงและมีหน้าที่อะไรบ้าง 
-                        ทำให้ต้องค้นหาข้อมูลเพิ่มเติมเกี่ยวกับแท็ก HTML และ CSS เพื่อให้สามารถใช้งานได้อย่างถูกต้อง
-                    </li>
-                    <li class="t">
-                        <strong>จากการทำ A1 นี้ เข้าใจอะไรเกี่ยวกับการพัฒนาเว็บไซต์มากขึ้น :</strong> ทำให้เข้าใจความหมายและวิธีการใช้งานแท็กมากขึ้น 
-                        และทำให้รู้เหตุผลของการต้องจัดไฟล์และโครงสร้างให้เป็นระเบียบ
-                    </li>
-                    <li class="t">
-                        <strong>สิ่งที่อยากปรับปรุงหรือพัฒนาต่อไปในอนาคต :</strong> อยากพัฒนาให้เว็บมีฟังก์ชันเยอะขึ้น มีการ input , output เพื่อถามตอบกับเจ้าของเว็บ เพื่อจะได้ฝึกการเขียนโค้ดให้ดีขึ้นด้วย
-                    </li>
+        <section id="reflection" class="mb-5">
+            <h2 class="text-primary mb-3">Reflection</h2>
+            <div class="card bg-white p-4 rounded border-0 shadow-sm">
+                <ul class="lh-lg mb-0">
+                    <li><strong>ประสบการณ์และความท้าทายที่พบในการพัฒนาเว็บไซต์ :</strong> การไม่รู้ว่าแท็กตัวไหนใช้ยังไงและมีหน้าที่อะไรบ้าง ทำให้ต้องค้นหาข้อมูลเพิ่มเติมเกี่ยวกับแท็ก HTML และ CSS เพื่อให้สามารถใช้งานได้อย่างถูกต้อง</li>
+                    <li><strong>จากการทำ A1 นี้ เข้าใจอะไรเกี่ยวกับการพัฒนาเว็บไซต์มากขึ้น :</strong> ทำให้เข้าใจความหมายและวิธีการใช้งานแท็กมากขึ้น และทำให้รู้เหตุผลของการต้องจัดไฟล์และโครงสร้างให้เป็นระเบียบ</li>
+                    <li><strong>สิ่งที่อยากปรับปรุงหรือพัฒนาต่อในอนาคต :</strong> อยากพัฒนาให้เว็บมีฟังก์ชันเยอะขึ้น มีการ input, output เพื่อถามตอบกับเจ้าของเว็บ เพื่อจะได้ฝึกการเขียนโค้ดให้ดีขึ้นด้วย</li>
                 </ul>
+            </div>
         </section>
 
     </main>
